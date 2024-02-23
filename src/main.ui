@@ -1,0 +1,366 @@
+<ui version="4.0" >
+ <author>Rodrigo Bronzelle</author>
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>718</width>
+    <height>550</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Kaŝludo</string>
+  </property>
+  <widget class="QWidget" name="centralwidget" >
+   <layout class="QVBoxLayout" >
+    <item>
+     <widget class="QTabWidget" name="tabWidget" >
+      <property name="tabPosition" >
+       <enum>QTabWidget::South</enum>
+      </property>
+      <property name="tabShape" >
+       <enum>QTabWidget::Triangular</enum>
+      </property>
+      <property name="currentIndex" >
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="twEsconder" >
+       <attribute name="title" >
+        <string>Esconder</string>
+       </attribute>
+       <layout class="QVBoxLayout" >
+        <item>
+         <layout class="QVBoxLayout" >
+          <item>
+           <layout class="QHBoxLayout" >
+            <item>
+             <widget class="QLabel" name="label" >
+              <property name="minimumSize" >
+               <size>
+                <width>110</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize" >
+               <size>
+                <width>110</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text" >
+               <string>&amp;Imagem:</string>
+              </property>
+              <property name="buddy" >
+               <cstring>leImagem</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="leImagem" />
+            </item>
+            <item>
+             <widget class="QToolButton" name="tbImagem" >
+              <property name="text" >
+               <string>...</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" >
+            <item>
+             <widget class="QLabel" name="label_2" >
+              <property name="minimumSize" >
+               <size>
+                <width>110</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize" >
+               <size>
+                <width>110</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text" >
+               <string>&amp;Arquivo:</string>
+              </property>
+              <property name="buddy" >
+               <cstring>leArquivo</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="leArquivo" />
+            </item>
+            <item>
+             <widget class="QToolButton" name="tbArquivo" >
+              <property name="text" >
+               <string>...</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" >
+            <item>
+             <widget class="QLabel" name="label_3" >
+              <property name="minimumSize" >
+               <size>
+                <width>110</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize" >
+               <size>
+                <width>110</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text" >
+               <string>&amp;Nova Imagem:</string>
+              </property>
+              <property name="buddy" >
+               <cstring>leNovaImagem</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="leNovaImagem" />
+            </item>
+            <item>
+             <widget class="QToolButton" name="tbNovaImagem" >
+              <property name="text" >
+               <string>...</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QSplitter" name="splitter" >
+          <property name="orientation" >
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <widget class="QGraphicsView" name="gvImagem" />
+          <widget class="QGraphicsView" name="gvNovaImagem" />
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" >
+          <item>
+           <spacer>
+            <property name="orientation" >
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" >
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pbEsconder" >
+            <property name="text" >
+             <string>&amp;Esconder</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pbSair" >
+            <property name="text" >
+             <string>&amp;Sair</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QProgressBar" name="pbSize" >
+          <property name="maximumSize" >
+           <size>
+            <width>16777215</width>
+            <height>8</height>
+           </size>
+          </property>
+          <property name="value" >
+           <number>50</number>
+          </property>
+          <property name="textVisible" >
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="twExtrair" >
+       <attribute name="title" >
+        <string>Extrair</string>
+       </attribute>
+       <layout class="QVBoxLayout" >
+        <item>
+         <layout class="QHBoxLayout" >
+          <item>
+           <widget class="QLabel" name="label_4" >
+            <property name="minimumSize" >
+             <size>
+              <width>110</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize" >
+             <size>
+              <width>110</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text" >
+             <string>&amp;Imagem:</string>
+            </property>
+            <property name="buddy" >
+             <cstring>leImagem</cstring>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="leImagemExtrair" >
+            <property name="maxLength" >
+             <number>300</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="tbImagemExtrair" >
+            <property name="text" >
+             <string>...</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" >
+          <item>
+           <widget class="QLabel" name="label_5" >
+            <property name="minimumSize" >
+             <size>
+              <width>110</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize" >
+             <size>
+              <width>110</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text" >
+             <string>&amp;Arquivo:</string>
+            </property>
+            <property name="buddy" >
+             <cstring>leArquivo</cstring>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="leArquivoSaida" >
+            <property name="readOnly" >
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QGraphicsView" name="gvImagemExtrair" />
+        </item>
+        <item>
+         <layout class="QHBoxLayout" >
+          <item>
+           <spacer>
+            <property name="orientation" >
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" >
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pbExtrair" >
+            <property name="text" >
+             <string>Extrair</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>718</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Ferramentas" >
+    <property name="title" >
+     <string>&amp;Ferramentas</string>
+    </property>
+    <addaction name="actionConfiguracoes" />
+   </widget>
+   <widget class="QMenu" name="menuA_juda" >
+    <property name="title" >
+     <string>A&amp;juda</string>
+    </property>
+    <addaction name="actionConteudo" />
+    <addaction name="separator" />
+    <addaction name="actionSobreKasludo" />
+    <addaction name="actionSobreQt" />
+   </widget>
+   <addaction name="menu_Ferramentas" />
+   <addaction name="menuA_juda" />
+  </widget>
+  <widget class="QStatusBar" name="sbStatusBar" />
+  <action name="actionConfiguracoes" >
+   <property name="text" >
+    <string>&amp;Configurações...</string>
+   </property>
+  </action>
+  <action name="actionConteudo" >
+   <property name="text" >
+    <string>Conteúdo...</string>
+   </property>
+  </action>
+  <action name="actionSobreKasludo" >
+   <property name="text" >
+    <string>Sobre Kaŝludo...</string>
+   </property>
+  </action>
+  <action name="actionSobreQt" >
+   <property name="text" >
+    <string>Sobre Qt...</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

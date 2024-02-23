@@ -1,0 +1,35 @@
+README
+
+Instructions to run Kasludo:
+
+Microsft Windows
+================
+- Unzip kasludo.zip to any folder
+- Unzip libraries.zip to either Ka?ludo folder or Windows\System32 folder
+- Double-click kasludo.exe
+- Enjoy!
+
+Linux
+=====
+- Unzip kasludo.tar.gz to any folder
+- Set permission to execute it with chmod
+    e.g.
+    # chmod 776 kasludo
+- In shell type ./kasludo
+- You may create a symbolic link into a PATH directory to execute it from anywhere
+    e.g.
+    # ln -s kasludo /usr/bin
+    (you must be a root user and in kasludo folder)
+- Enjoy!
+
+Compiling
+=========
+- Pre-requisits (gcc @ Linuz, mingw @ Ms Windows and Qt 4.0+)
+- Unzip kasludo-src.tar.gz to any folder
+- In Ms Windows set the enviroment variable PATH with qt/bin and mingw/bin dir
+- In Ka?ludo root directory type
+    # qmake kasludo.pro
+    # make
+- A new binary file will be create in bin directory.
+- Run it
+- Enjoy!
